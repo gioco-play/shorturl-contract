@@ -1,0 +1,18 @@
+{
+    "name": "gioco-plus/shorturl-contract",
+    "description": "Short URL Interface",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xuan Yang",
+            "email": "xuan.yang@goldenf.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GiocoPlus\\ShortUrl\\": "src/"
+        }
+    },
+    "require": {}
+}
