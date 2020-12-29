@@ -13,8 +13,9 @@ interface ShortUrlServiceInterface {
      * @param string $operatorCode
      * @param string $playerName
      * @param string $gameCode
+     * @param boolean $ssl
      * @return array
      */
-    function gen(string $gameUrl, string $operatorCode, string $playerName, string $gameCode): array;
+    function gen(string $gameUrl, string $operatorCode, string $playerName, string $gameCode, bool $ssl): array;
 }
 
