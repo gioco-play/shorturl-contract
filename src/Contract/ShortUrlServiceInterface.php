@@ -13,8 +13,8 @@ interface ShortUrlServiceInterface {
      * @param string $operatorCode
      * @param string $playerName
      * @param string $gameCode
-     * @return string
+     * @return array
      */
-    function gen(string $gameUrl, string $operatorCode, string $playerName, string $gameCode): string;
+    function gen(string $gameUrl, string $operatorCode, string $playerName, string $gameCode): array;
 }
 
