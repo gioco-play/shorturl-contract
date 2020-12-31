@@ -7,7 +7,7 @@ namespace GiocoPlus\ShortUrl\Contract;
 interface ShortUrlServiceInterface {
 
     /**
-     * 短網址產生
+     * 遊戲短網址產生
      *
      * @param string $rawUrl
      * @param string $operatorCode
@@ -18,6 +18,16 @@ interface ShortUrlServiceInterface {
      * @param boolean $ssl
      * @return array
      */
-    function gen(string $rawUrl, string $operatorCode, string $playerName, string $vendor, string $gameType, string $gameCode, bool $ssl): array;
+    function genGameUrl(string $rawUrl, string $operatorCode, string $playerName, string $vendor, string $gameType, string $gameCode, bool $ssl): array;
+
+
+    /**
+     * 短網址產生
+     *
+     * @param string $rawUrl
+     * @param boolean $ssl
+     * @return array
+     */
+    function gen(string $rawUrl, bool $ssl): array;
 }
 
