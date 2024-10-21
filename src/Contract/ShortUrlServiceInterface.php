@@ -29,5 +29,12 @@ interface ShortUrlServiceInterface {
      * @return array
      */
     function gen(string $rawUrl, bool $ssl): array;
+
+    /**
+     * 短網址轉回原始網址
+     * @param string $gameUrl
+     * @return array
+     */
+    function transferToRawUrl(string $gameUrl): array;
 }
 
